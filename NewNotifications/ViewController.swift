@@ -25,16 +25,35 @@ class ViewController: UIViewController {
     }
     
     @IBAction func notifyButtonTapped(sender: UIButton) {
-        
+        scheduleNotification(inSeconds: 5, completion: {succes in
+            if succes {
+                print("Successfully scheduled notification")
+            } else {
+                print("Error scheduling notification")
+            }
+        })
     }
 
-    func scheduleNotification(inSeconds: TimeInterval, completion: (_ Success: Bool) -> ()) {
+    func scheduleNotification(inSeconds: TimeInterval, completion: @escaping (_ Success: Bool) -> ()) {
         
         let notif = UNMutableNotificationContent()
         
         notif.title = "New Notification"
         notif.subtitle = "These are great!"
         notif.body = "The new notification options in ios 10 are what I've always wanted!"
+        
+        let notifTrigger = UNTimeIntervalNotificationTrigger(timeInterval: inSeconds, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "myNotification", content: notif, trigger: notifTrigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
+            
+            if error != nil {
+                print(error)
+                completion(false)
+            } else {
+                completion(true)
+            }
+        })
         
     }
 }
