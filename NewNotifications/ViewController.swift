@@ -49,6 +49,9 @@ class ViewController: UIViewController {
         
         let notif = UNMutableNotificationContent()
         
+        //ONLY FOR EXTENSION
+        notif.categoryIdentifier = "myNotificationCategory"
+        
         notif.title = "New Notification"
         notif.subtitle = "These are great!"
         notif.body = "The new notification options in ios 10 are what I've always wanted!"
@@ -60,12 +63,14 @@ class ViewController: UIViewController {
         UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
             
             if error != nil {
-                print(error)
+                print(error!)
                 completion(false)
             } else {
                 completion(true)
             }
         })
+        
+        
         
     }
 }

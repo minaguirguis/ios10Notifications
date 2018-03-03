@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="MyContentExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z7F-Vc-lyE">
+                                <rect key="frame" x="8" y="8" width="304" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="aRQ-EJ-iNn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="x36-oP-i40"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvL-Bg-ImE">
+                                <rect key="frame" x="192" y="180.5" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="Z7F-Vc-lyE" secondAttribute="trailing" constant="8" id="0ER-Uf-GS1"/>
+                            <constraint firstItem="Z7F-Vc-lyE" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="8" id="239-9n-kNd"/>
+                            <constraint firstItem="Z7F-Vc-lyE" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="8" id="A7V-zK-aaN"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="Z7F-Vc-lyE" secondAttribute="bottom" constant="8" id="DqC-7v-Do5"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="FvL-Bg-ImE" secondAttribute="trailing" constant="20" id="GGe-pg-AB7"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="FvL-Bg-ImE" secondAttribute="trailing" id="PRI-vV-FSV"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="FvL-Bg-ImE" secondAttribute="bottom" constant="20" id="rn6-OO-6Xp"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="FvL-Bg-ImE" secondAttribute="bottom" id="yC4-f0-bkC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="320"/>
+                    <connections>
+                        <outlet property="imageView" destination="Z7F-Vc-lyE" id="qxJ-9k-FN8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="101.64917541229386"/>
+        </scene>
+    </scenes>
+</document>
