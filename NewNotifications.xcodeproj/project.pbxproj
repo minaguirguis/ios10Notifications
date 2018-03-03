@@ -13,6 +13,7 @@
 		569FC4A8204A0EDB004F0039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569FC4A7204A0EDB004F0039 /* Assets.xcassets */; };
 		569FC4AB204A0EDB004F0039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569FC4A9204A0EDB004F0039 /* LaunchScreen.storyboard */; };
 		569FC4B6204A0EDB004F0039 /* NewNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569FC4B5204A0EDB004F0039 /* NewNotificationsTests.swift */; };
+		569FC4C1204A25E6004F0039 /* rick_grimes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 569FC4C0204A25E6004F0039 /* rick_grimes.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		569FC4B1204A0EDB004F0039 /* NewNotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewNotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		569FC4B5204A0EDB004F0039 /* NewNotificationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotificationsTests.swift; sourceTree = "<group>"; };
 		569FC4B7204A0EDB004F0039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		569FC4C0204A25E6004F0039 /* rick_grimes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rick_grimes.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				569FC4A7204A0EDB004F0039 /* Assets.xcassets */,
 				569FC4A9204A0EDB004F0039 /* LaunchScreen.storyboard */,
 				569FC4AC204A0EDB004F0039 /* Info.plist */,
+				569FC4C0204A25E6004F0039 /* rick_grimes.gif */,
 			);
 			path = NewNotifications;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				569FC4AB204A0EDB004F0039 /* LaunchScreen.storyboard in Resources */,
 				569FC4A8204A0EDB004F0039 /* Assets.xcassets in Resources */,
+				569FC4C1204A25E6004F0039 /* rick_grimes.gif in Resources */,
 				569FC4A6204A0EDB004F0039 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
